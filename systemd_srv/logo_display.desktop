@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Logo Display
-Exec=/bin/bash -c "export ROS_DOMAIN_ID=100 QT_QPA_PLATFORM=xcb && /home/orangepi/miniconda3/envs/robot_env/bin/python -u -m autolife_robot_kiosk.main > /home/orangepi/logo_display.log 2>&1"
+Exec=/bin/bash -c "source /opt/ros/humble/setup.bash && export ROS_DOMAIN_ID=100 QT_QPA_PLATFORM=xcb && /home/orangepi/miniconda3/envs/robot_env/bin/python -u -m autolife_robot_kiosk.main > /home/orangepi/logo_display.log 2>&1"
 X-GNOME-Autostart-enabled=true
 Terminal=false
