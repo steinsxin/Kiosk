@@ -5,7 +5,6 @@ import pathlib
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir, os.path.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 
-
 if os.path.exists(os.path.abspath(os.path.join(PROJECT_ROOT, 'assets'))):
     ASSETS_ROOT = os.path.abspath(os.path.join(PROJECT_ROOT, 'assets'))
 elif os.path.exists(os.path.abspath(os.path.join(PACKAGE_ROOT, 'assets'))):
